@@ -22,6 +22,8 @@
 ## **Overview**
 
 This dashboard provides an in-depth analysis of crime data from Bangladesh spanning the years 2010–2019. The dataset includes reports from 16 different zones, including divisions and metropolitan areas such as Dhaka Division, Chittagong Division, Khulna Division, and more. The dashboard offers interactive visualizations to explore crime trends, growth rates, and distributions across various dimensions.
+Below is a preview of the dashboard: 
+![Bangladesh Crime Data Analysis Dashboard](./Output/Dashboard.jpg)
 
 
 ## **Data Source**
