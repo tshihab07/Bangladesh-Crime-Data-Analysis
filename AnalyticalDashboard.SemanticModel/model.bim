@@ -1,0 +1,781 @@
+{
+  "compatibilityLevel": 1567,
+  "model": {
+    "annotations": [
+      {
+        "name": "PBI_QueryOrder",
+        "value": "[\"calculations\",\"dataPivot\",\"data\"]"
+      },
+      {
+        "name": "__PBI_TimeIntelligenceEnabled",
+        "value": "1"
+      },
+      {
+        "name": "PBIDesktopVersion",
+        "value": "2.136.1202.0 (24.09)"
+      },
+      {
+        "name": "PBI_ProTooling",
+        "value": "[\"DevMode\"]"
+      }
+    ],
+    "culture": "en-US",
+    "cultures": [
+      {
+        "name": "en-US",
+        "linguisticMetadata": {
+          "content": {
+            "Language": "en-US",
+            "Version": "1.0.0"
+          },
+          "contentType": "json"
+        }
+      }
+    ],
+    "dataAccessOptions": {
+      "legacyRedirects": true,
+      "returnErrorValuesAsNull": true
+    },
+    "defaultPowerBIDataSourceVersion": "powerBI_V3",
+    "relationships": [
+      {
+        "name": "AutoDetected_2834f384-7020-4f63-9b4e-17412c97f055",
+        "fromColumn": "Total Cases",
+        "fromTable": "dataPivot",
+        "toColumn": "Total Cases",
+        "toTable": "data"
+      },
+      {
+        "name": "a1891298-0099-dd1e-3f85-f072d01ee7b7",
+        "fromColumn": "Year",
+        "fromTable": "data",
+        "toCardinality": "many",
+        "toColumn": "Year",
+        "toTable": "DateTable"
+      }
+    ],
+    "sourceQueryCulture": "en-US",
+    "tables": [
+      {
+        "name": "calculations",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Column1",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "9b4fbb69-a67e-4856-b9c9-87f6ae22b22c",
+            "sourceColumn": "Column1",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "707233f7-03b1-40c6-a858-097d5cdee68f",
+        "measures": [
+          {
+            "name": "Total Crimes",
+            "expression": "SUM('data'[Total Cases])",
+            "formatString": "0",
+            "lineageTag": "2b7c17f4-006b-430d-a3f5-e5a4bf03c88e"
+          },
+          {
+            "name": "Total Dacoity",
+            "displayFolder": "Individual Totals",
+            "expression": "SUM('data'[Dacoity])",
+            "formatString": "0",
+            "lineageTag": "29b42b72-e223-4038-9258-5a337e184cb3"
+          },
+          {
+            "name": "Total Robbery",
+            "displayFolder": "Individual Totals",
+            "expression": "SUM('data'[Robbery])",
+            "formatString": "0",
+            "lineageTag": "0ff4f043-aff9-4209-8bc5-d3592dc099b0"
+          },
+          {
+            "name": "Total Murder",
+            "displayFolder": "Individual Totals",
+            "expression": "SUM('data'[Murder])",
+            "formatString": "0",
+            "lineageTag": "a23c47a2-da72-41f3-a027-47d1e8ba6073"
+          },
+          {
+            "name": "Total Speedy Trial",
+            "displayFolder": "Individual Totals",
+            "expression": "SUM('data'[Speedy Trial])",
+            "formatString": "0",
+            "lineageTag": "d7b02d77-be8a-4520-aaff-2ff861f358dd"
+          },
+          {
+            "name": "Total Violence",
+            "displayFolder": "Individual Totals",
+            "expression": "SUM('data'[Violence])",
+            "formatString": "0",
+            "lineageTag": "fc477185-5895-493e-b881-db96343d8f8c"
+          },
+          {
+            "name": "Total women and Child Abuse",
+            "displayFolder": "Individual Totals",
+            "expression": "SUM(data[Woman and Child Abuse])",
+            "formatString": "0",
+            "lineageTag": "ff1f6873-e7f9-4933-a7c7-6187e4306b9d"
+          },
+          {
+            "name": "Total Kidnapping",
+            "displayFolder": "Individual Totals",
+            "expression": "SUM(data[Kidnapping])",
+            "formatString": "0",
+            "lineageTag": "b17ddb4b-3c76-4fa5-90f9-257cc0a650dc"
+          },
+          {
+            "name": "Total Police Assault",
+            "displayFolder": "Individual Totals",
+            "expression": "SUM(data[Police Assault])",
+            "formatString": "0",
+            "lineageTag": "75b0caf5-3278-4199-983e-46db3a0cd4ef"
+          },
+          {
+            "name": "Total Burglary",
+            "displayFolder": "Individual Totals",
+            "expression": "SUM(data[Burglary])",
+            "formatString": "0",
+            "lineageTag": "ff765d9b-e3b6-4bc8-b32d-8cc0e3643805"
+          },
+          {
+            "name": "Total Theft",
+            "displayFolder": "Individual Totals",
+            "expression": "SUM(data[Theft])",
+            "formatString": "0",
+            "lineageTag": "a7ae2516-9bcc-42b1-9351-9c63215d51e1"
+          },
+          {
+            "name": "Total Recovery Arms Act",
+            "displayFolder": "Individual Totals",
+            "expression": "SUM(data[Recovery Arms Act])",
+            "formatString": "0",
+            "lineageTag": "4b3fff56-c81f-4102-a6ba-0b6120ba88f6"
+          },
+          {
+            "name": "Total Recovery Explosive",
+            "displayFolder": "Individual Totals",
+            "expression": "SUM(data[Recovery Explosive])",
+            "formatString": "0",
+            "lineageTag": "8222358f-2bba-42b3-8e64-577389eb4fef"
+          },
+          {
+            "name": "Total Recovery Narcotics",
+            "displayFolder": "Individual Totals",
+            "expression": "SUM(data[Recovery Narcotics])",
+            "formatString": "0",
+            "lineageTag": "7b31f427-399b-4df7-bdbe-e118d01e8625"
+          },
+          {
+            "name": "Total Recovery Smuggling",
+            "displayFolder": "Individual Totals",
+            "expression": "SUM(data[Recovery Smuggling])",
+            "formatString": "0",
+            "lineageTag": "5cf50296-1c11-40d5-ae11-079778827a95"
+          },
+          {
+            "name": "Top Crimes by Area",
+            "displayFolder": "Top 5",
+            "expression": [
+              "",
+              "VAR CurrentArea = SELECTEDVALUE('data'[Area])",
+              "RETURN",
+              "CALCULATE(",
+              "    [Total Crimes],",
+              "    FILTER(",
+              "        ALL('data'),",
+              "        'data'[Area] = CurrentArea",
+              "    )",
+              ")"
+            ],
+            "formatString": "0",
+            "lineageTag": "d4772fd5-3e75-446e-b8ef-ad8bf32347c2"
+          },
+          {
+            "name": "Previous Year Crimes",
+            "expression": "CALCULATE([Total Crimes], SAMEPERIODLASTYEAR('DateTable'[Date]))",
+            "formatString": "0",
+            "lineageTag": "da51329b-00b2-438b-9e58-2ede8ad717a9"
+          },
+          {
+            "name": "Crime Growth %",
+            "expression": "DIVIDE([Total Crimes] - [Previous Year Crimes], [Previous Year Crimes], 0)",
+            "formatString": "0.00%;-0.00%;0.00%",
+            "lineageTag": "b3753956-766c-4325-a2ea-1cd31e2d0301"
+          },
+          {
+            "name": "Top 5 Crimes All Time",
+            "displayFolder": "Top 5",
+            "expression": "TOPN(5, VALUES('dataPivot'[Crime Type]), [Total Crimes], DESC)",
+            "lineageTag": "5f2c1722-7c5c-4752-ad4f-7f571e30ff12"
+          },
+          {
+            "name": "Top 5 Crimes by Area",
+            "displayFolder": "Top 5",
+            "expression": [
+              "",
+              "VAR CurrentArea = SELECTEDVALUE('data'[Area])",
+              "RETURN",
+              "TOPN(",
+              "    5,",
+              "    CALCULATETABLE(",
+              "        VALUES('dataPivot'[Crime Type]),",
+              "        'data'[Area] = CurrentArea",
+              "    ),",
+              "    [Total Crimes],",
+              "    DESC",
+              ")"
+            ],
+            "lineageTag": "12c26a11-5877-4c2f-a438-303cec670f41"
+          },
+          {
+            "name": "Total Others",
+            "displayFolder": "Individual Totals",
+            "expression": "SUM('data'[Other])",
+            "formatString": "0",
+            "lineageTag": "d365a740-8b6b-4a8e-ab6e-fb7ac21ed60a"
+          },
+          {
+            "name": "Top 5 Crimes by Year",
+            "displayFolder": "Top 5",
+            "expression": [
+              "",
+              "VAR CurrentYear = SELECTEDVALUE('DateTable'[Year])",
+              "RETURN",
+              "TOPN(",
+              "    5,",
+              "    CALCULATETABLE(",
+              "        VALUES('dataPivot'[Crime Type]),",
+              "        'DateTable'[Year] = CurrentYear",
+              "    ),",
+              "    [Total Crimes],",
+              "    DESC",
+              ")"
+            ],
+            "lineageTag": "c19dad84-93e6-47d1-a50c-de1b3c06282b"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "calculations",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText(\"i44FAA==\", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [Column1 = _t]),",
+                "    #\"Changed Type\" = Table.TransformColumnTypes(Source,{{\"Column1\", type text}})",
+                "in",
+                "    #\"Changed Type\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "dataPivot",
+        "annotations": [
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navigation"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Area",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "79cb5bfa-11de-4908-a78e-27f0923c3da7",
+            "sourceColumn": "Area",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Year",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "1e39f7e5-9e15-4b8b-a49a-b522bf3e095c",
+            "sourceColumn": "Year",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Crime Type",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "d7b40910-67fe-4608-97cd-f748cd864a19",
+            "sourceColumn": "Crime Type",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Cases",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "a58bca5e-a7ed-4fab-992f-25692bb1f346",
+            "sourceColumn": "Cases",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Total Cases",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "0293531f-9421-4c73-bd48-9074595e6bd7",
+            "sourceColumn": "Total Cases",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "f48cf02f-9277-4384-8ecc-83b00edc5724",
+        "partitions": [
+          {
+            "name": "dataPivot",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = Csv.Document(File.Contents(\"F:\\03. Python Programming\\09 Data Science\\01 AnalyticalDashboards\\PowerBI\\20250619_PBIV07_BangladeshCrimeDataAnalysis\\files\\CrimeDataBD_Cleaned.csv\"),[Delimiter=\",\", Columns=18, Encoding=1252, QuoteStyle=QuoteStyle.None]),",
+                "    #\"Promoted Headers\" = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),",
+                "    #\"Changed Type\" = Table.TransformColumnTypes(#\"Promoted Headers\",{{\"Area\", type text}, {\"Year\", Int64.Type}, {\"Dacoity\", Int64.Type}, {\"Robbery\", Int64.Type}, {\"Murder\", Int64.Type}, {\"Speedy Trial\", Int64.Type}, {\"Violence\", Int64.Type}, {\"Woman and Child Abuse\", Int64.Type}, {\"Kidnapping\", Int64.Type}, {\"Police Assault\", Int64.Type}, {\"Burglary\", Int64.Type}, {\"Theft\", Int64.Type}, {\"Other\", Int64.Type}, {\"Recovery Arms Act\", Int64.Type}, {\"Recovery Explosive\", Int64.Type}, {\"Recovery Narcotics\", Int64.Type}, {\"Recovery Smuggling\", Int64.Type}, {\"Total Cases\", Int64.Type}}),",
+                "    #\"Unpivoted Columns\" = Table.UnpivotOtherColumns(#\"Changed Type\", {\"Area\", \"Year\", \"Total Cases\"}, \"Attribute\", \"Value\"),",
+                "    #\"Renamed Columns\" = Table.RenameColumns(#\"Unpivoted Columns\",{{\"Attribute\", \"Crime Type\"}, {\"Value\", \"Cases\"}}),",
+                "    #\"Reordered Columns\" = Table.ReorderColumns(#\"Renamed Columns\",{\"Area\", \"Year\", \"Crime Type\", \"Cases\", \"Total Cases\"})",
+                "in",
+                "    #\"Reordered Columns\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "data",
+        "annotations": [
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navigation"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Area",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "ed994fec-9efb-4b58-9564-80ea438423ec",
+            "sourceColumn": "Area",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Year",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "changedProperties": [
+              {
+                "property": "SortByColumn"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "a361d0c7-5177-4c47-86f0-89ed8cf4e638",
+            "sourceColumn": "Year",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Dacoity",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "8a87f7bd-2b10-4611-83dc-5b5f49310743",
+            "sourceColumn": "Dacoity",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Robbery",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "1a1ed06c-c0d4-468f-ad4e-35a0de2b5779",
+            "sourceColumn": "Robbery",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Murder",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "a6a860c1-5606-468f-b4bc-68015c70f3c2",
+            "sourceColumn": "Murder",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Speedy Trial",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "d2beaf95-d59e-4756-9844-1085083655c8",
+            "sourceColumn": "Speedy Trial",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Violence",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "fac2862a-6d41-47bd-bf46-2feaa61d2774",
+            "sourceColumn": "Violence",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Woman and Child Abuse",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "c187c3a8-54b1-4172-84dc-9d6b0fc0c3b2",
+            "sourceColumn": "Woman and Child Abuse",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Kidnapping",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "db85dfe6-5f47-4ea8-858d-e872b08bfdc9",
+            "sourceColumn": "Kidnapping",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Police Assault",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "5a368f38-af74-440c-abf4-5e0e50d5e735",
+            "sourceColumn": "Police Assault",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Burglary",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "9f8fed6d-6b5e-49a5-9a43-7113a967f831",
+            "sourceColumn": "Burglary",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Theft",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "55735fb5-c659-4f37-916c-26569c8d4517",
+            "sourceColumn": "Theft",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Other",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "932a4014-e1b7-4f84-94a5-0127562328fe",
+            "sourceColumn": "Other",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Recovery Arms Act",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "56767149-a78c-4589-a4d3-b4121a02a7b7",
+            "sourceColumn": "Recovery Arms Act",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Recovery Explosive",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "4bdc67ca-53d2-4e2d-bb72-a807ae76bb58",
+            "sourceColumn": "Recovery Explosive",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Recovery Narcotics",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "838c0d35-c571-452b-8696-b268ff5649e5",
+            "sourceColumn": "Recovery Narcotics",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Recovery Smuggling",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "007f11f6-7438-4c21-96b4-c5984c800710",
+            "sourceColumn": "Recovery Smuggling",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Total Cases",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "ad729562-eb4d-4896-8d52-ba0b60ea2163",
+            "sourceColumn": "Total Cases",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "e2cb6007-b7d3-4946-a4bf-2d3fec4b1ff0",
+        "partitions": [
+          {
+            "name": "data",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = Csv.Document(File.Contents(\"F:\\03. Python Programming\\09 Data Science\\01 AnalyticalDashboards\\PowerBI\\20250619_PBIV07_BangladeshCrimeDataAnalysis\\files\\CrimeDataBD_Cleaned.csv\"),[Delimiter=\",\", Columns=18, Encoding=1252, QuoteStyle=QuoteStyle.None]),",
+                "    #\"Promoted Headers\" = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),",
+                "    #\"Changed Type\" = Table.TransformColumnTypes(#\"Promoted Headers\",{{\"Area\", type text}, {\"Year\", Int64.Type}, {\"Dacoity\", Int64.Type}, {\"Robbery\", Int64.Type}, {\"Murder\", Int64.Type}, {\"Speedy Trial\", Int64.Type}, {\"Violence\", Int64.Type}, {\"Woman and Child Abuse\", Int64.Type}, {\"Kidnapping\", Int64.Type}, {\"Police Assault\", Int64.Type}, {\"Burglary\", Int64.Type}, {\"Theft\", Int64.Type}, {\"Other\", Int64.Type}, {\"Recovery Arms Act\", Int64.Type}, {\"Recovery Explosive\", Int64.Type}, {\"Recovery Narcotics\", Int64.Type}, {\"Recovery Smuggling\", Int64.Type}, {\"Total Cases\", Int64.Type}}),",
+                "    #\"Sorted Rows\" = Table.Sort(#\"Changed Type\",{{\"Year\", Order.Ascending}})",
+                "in",
+                "    #\"Sorted Rows\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "DateTable",
+        "annotations": [
+          {
+            "name": "PBI_Id",
+            "value": "fe7e24d5e1f54511943273780d8e3b09"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "Short Date",
+            "isDataTypeInferred": true,
+            "isKey": true,
+            "isNameInferred": true,
+            "lineageTag": "21d5954e-b1e4-48c3-ae6e-8842d1e724bc",
+            "sourceColumn": "[Date]",
+            "summarizeBy": "none",
+            "type": "calculatedTableColumn"
+          },
+          {
+            "name": "Year",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "isDataTypeInferred": true,
+            "isNameInferred": true,
+            "lineageTag": "0abee903-8221-40c6-9d90-f6f0e19dfaf5",
+            "sourceColumn": "[Year]",
+            "summarizeBy": "none",
+            "type": "calculatedTableColumn"
+          },
+          {
+            "name": "Month",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "isDataTypeInferred": true,
+            "isNameInferred": true,
+            "lineageTag": "ea7584c8-3fc2-4473-a980-f91dab357aff",
+            "sourceColumn": "[Month]",
+            "summarizeBy": "none",
+            "type": "calculatedTableColumn"
+          },
+          {
+            "name": "YearMonth",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "isDataTypeInferred": true,
+            "isNameInferred": true,
+            "lineageTag": "664503e2-421f-4b65-83bb-b4ae082691a9",
+            "sourceColumn": "[YearMonth]",
+            "summarizeBy": "none",
+            "type": "calculatedTableColumn"
+          }
+        ],
+        "dataCategory": "Time",
+        "lineageTag": "a73cc527-1c43-4fc2-8c52-10f9292c9304",
+        "partitions": [
+          {
+            "name": "DateTable",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "",
+                "ADDCOLUMNS(",
+                "    CALENDAR(DATE(2010, 1, 1), DATE(2019, 12, 31)),",
+                "    \"Year\", YEAR([Date]),",
+                "    \"Month\", FORMAT([Date], \"MMM\"),",
+                "    \"YearMonth\", FORMAT([Date], \"YYYY-MM\")",
+                ")"
+              ],
+              "type": "calculated"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}
