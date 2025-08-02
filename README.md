@@ -1,6 +1,6 @@
 # Bangladesh Crime Data Analysis
 
-## Table of Content
+## Table of Contents
 
 - [Overview](#overview)
 - [Data Source](#data-source)
@@ -28,7 +28,7 @@ Below is a preview of the dashboard: <br><br>
 
 ## **Data Source**
 
-The dataset was sourced from Kaggle and contains number of records of [Bangladesh Crime Data from 2010 - 2019](https://www.kaggle.com/datasets/talhabu/bangladesh-crime-data-from-2010-2019). It includes information about different types of crimes (e.g., Theft, Recovery Narcotics, Woman and Child Abuse) and their occurrences across 16 zones.
+The dataset was sourced from Kaggle and contains several records of [Bangladesh Crime Data from 2010 - 2019](https://www.kaggle.com/datasets/talhabu/bangladesh-crime-data-from-2010-2019). It includes information about different types of crimes (e.g., Theft, Recovery of Narcotics, and Abuse of Women and Children) and their occurrences across 16 zones.
 
 ### **Dataset Description**
 
@@ -53,7 +53,7 @@ The dataset was sourced from Kaggle and contains number of records of [Banglades
     - `Barishal Metropolitan`
     - `Sylhet Division`
     - `Sylhet Metropolitan`
-    - `Rangpur Divison`
+    - `Rangpur Division`
     - `Mymensingh Division`
     - `Gazipur Metropolitan`
     - `Railway Range`
