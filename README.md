@@ -1,4 +1,5 @@
 # Bangladesh Crime Data Analysis
+This Bangladesh Crime Data Analysis dashboard, built with Power BI, offers a comprehensive, interactive view of crime patterns across districts, time periods, and offense categories throughout Bangladesh.
 
 ## Table of Contents
 
